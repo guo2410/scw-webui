@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div th:text="${hello}"></div>
+<br><br>
+<div th:each="username : ${usernames}" th:text="${username}"></div>
+<br><br>
+<div th:each="username : ${usernames}">[[${username}]]</div>
+</body>
+</html>
